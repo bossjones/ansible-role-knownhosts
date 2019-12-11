@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+# tasks for  ansible-role-knownhosts
+---
+- name: update known_hosts
+  known_hosts:
+    name: "{{ item.host }}"
+    key: "{{ lookup('file', item.key_file) }}"
+  with_items:
+    - host: github.com
+      key_file: github-public-key
+    - host: bitbucket.org
+      key_file: bitbucket-public-key

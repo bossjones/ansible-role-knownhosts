@@ -1,0 +1,7 @@
+# -*- coding: utf-8 -*-
+# default vars for  ansible-role-knownhosts
+---
+# Suggested ansible variable namespace: behance__oh__my__bossjones__knownhosts___
+
+bossjones__knownhosts__path_to_knownhosts_config:
+  - { user: "vagrant", dir: "/home/vagrant" }
